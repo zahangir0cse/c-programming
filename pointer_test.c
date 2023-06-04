@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(){
+int main() {
     char *p = "Hello World";
     int len = strlen(p);
     int i;
@@ -14,13 +14,13 @@ int main(){
         p++;
     }
     printf("Reverse\n");*/
-    for(i = len-1; i >=0; i--){
-        if (*(p+i) >= 'A' && *(p+i) <= 'Z'){
-            printf("%c", *(p+i) + 32);
-        } else if (*(p+i) >= 'a' && *(p+i) <= 'z'){
-            printf("%c", *(p+i) - 32);
-        } else{
-            printf("%c", *(p+i));
+    for (i = len - 1; i >= 0; i--) {
+        if (*(p + i) >= 'A' && *(p + i) <= 'Z') {
+            printf("%c", *(p + i) + 32);
+        } else if (*(p + i) >= 'a' && *(p + i) <= 'z') {
+            printf("%c", *(p + i) - 32);
+        } else {
+            printf("%c", *(p + i));
         }
     }
     return 0;
