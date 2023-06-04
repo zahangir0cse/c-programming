@@ -15,12 +15,13 @@ int main(){
     }
     printf("Reverse\n");*/
     for(i = len-1; i >=0; i--){
-        if (*(p+i) >= 65 && *(p+i) <= 90){
-            printf("%c\n", *(p+i) + 32);
+        if (*(p+i) >= 'A' && *(p+i) <= 'Z'){
+            printf("%c", *(p+i) + 32);
+        } else if (*(p+i) >= 'a' && *(p+i) <= 'z'){
+            printf("%c", *(p+i) - 32);
         } else{
-            printf("%c\n", *(p+i) - 32);
+            printf("%c", *(p+i));
         }
-
     }
     return 0;
 }
